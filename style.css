@@ -1,0 +1,182 @@
+:root {
+  --calcWidth: 400px;
+}
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: cadetblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#calcContainer {
+  background-color: black;
+}
+
+#calc {
+  width: var(--calcWidth);
+  height: calc(var(--calcWidth) * 1.5);
+  background-color: brown;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "display display display display"
+    "c back back back"
+    "n7 n8 n9 plus"
+    "n4 n5 n6 minus"
+    "n1 n2 n3 times"
+    "negative n0 point divide"
+    "equals equals equals equals";
+  padding: 16px;
+  gap: 5px;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  min-width: 10px;
+  min-height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.utility {
+  background-color: silver;
+}
+
+.number {
+  background-color: grey;
+}
+
+.operator {
+  background-color: olive;
+}
+
+.other {
+  background-color: burlywood;
+}
+
+#calcOutput {
+  background-color: black;
+  grid-area: display;
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  color: white;
+  overflow: none;
+}
+
+#C {
+  grid-area: c;
+}
+
+#CE {
+  grid-area: ce;
+}
+
+#backspace {
+  grid-area: back;
+  background-color: #333;
+  color: white;
+}
+
+#n0 {
+  grid-area: n0;
+}
+
+#n1 {
+  grid-area: n1;
+}
+
+#n2 {
+  grid-area: n2;
+}
+
+#n3 {
+  grid-area: n3;
+}
+
+#n4 {
+  grid-area: n4;
+}
+
+#n5 {
+  grid-area: n5;
+}
+
+#n6 {
+  grid-area: n6;
+}
+
+#n7 {
+  grid-area: n7;
+}
+
+#n8 {
+  grid-area: n8;
+}
+
+#n9 {
+  grid-area: n9;
+}
+
+#plus {
+  grid-area: plus;
+}
+
+#minus {
+  grid-area: minus;
+}
+
+#times {
+  grid-area: times;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#equals {
+  background-color: orange;
+  grid-area: equals;
+}
+
+#about {
+  display: block;
+  width: 50vw;
+  height: 83vh;
+  background-color: brown;
+  margin: 30px;
+  padding: 16px;
+}
+
+#textBox {
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #about {
+    display: none;
+  }
+}
