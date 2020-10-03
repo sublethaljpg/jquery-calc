@@ -180,7 +180,7 @@ body {
 @media only screen and (max-width: 700px) {
   #calc {
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
   }
   #about {
     display: none;
