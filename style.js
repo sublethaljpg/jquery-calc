@@ -15,5 +15,8 @@ window.mobileAndTabletCheck = function () {
 };
 
 if (check === true) {
+  console.log("User is using a mobile device.");
   $("#calc").css("height", "calc(100vh - 88px)");
+} else {
+  console.log("User is not using a mobile device.");
 }
