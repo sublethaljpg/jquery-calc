@@ -181,6 +181,7 @@ body {
   #calc {
     width: 100vw;
     height: 90vh;
+    top: 37px;
   }
   #about {
     display: none;
