@@ -15,5 +15,5 @@ window.mobileAndTabletCheck = function () {
 };
 
 if (check === true) {
-  $("#calc").css("height", "calc(100vh - 44px)");
+  $("#calc").css("height", "calc(100vh - 88px)");
 }
