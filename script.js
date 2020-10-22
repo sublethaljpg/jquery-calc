@@ -19,7 +19,7 @@ function getOutput() {
 }
 
 function getResult(number) {
-  return eval($("#calcOutputText").text());
+  return Math.round(eval($("#calcOutputText").text()) * 100) / 100;
 }
 
 $(document).ready(function () {
